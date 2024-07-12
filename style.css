@@ -1,0 +1,204 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    position: relative;
+    height: 100vh;
+}
+header{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.236);
+}
+span{
+    color: rgb(255, 166, 0);
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+    font-size: 17px;
+}
+li{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    color: black;
+    font-weight: 500;
+}
+li:hover{
+    color: rgb(255, 166, 0);;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    margin-top: 30px;
+    margin-left: 45px;
+}
+h2{
+ color: orange;
+ font-size: 17px;
+}
+
+img{
+    height: 450px;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+section{
+    flex-direction: column;
+    display: flex;
+   justify-content: center;
+    height: 100%;
+    font-size: 18px;
+    width: 50%;
+    margin-left: 30px;
+    margin-bottom: 65px;
+}
+section > h2{
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+.p-sec{
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;  
+}
+p{
+    font-size: 54px ;
+}
+#Lorem{
+    font-size: 15px;
+    color: black;
+    margin-left: 2px;
+    font-weight: 400;
+    line-height: 1.8rem;
+    margin-top: 10px;
+}
+
+button{
+    background-color: orangered;
+    color: white;
+    border: solid white;
+    border-radius: 8px;
+    font-weight: 700;
+    padding: 15px 25px 15px 25px;
+    font-size: 15px;
+    text-decoration: none;
+    margin-top: 10px;
+    position: absolute;
+    cursor: pointer;
+}
+
+   
+    
+    /* ---------------- MEDIA QUERIES ---------------*/
+
+    @media(max-width: 1140px){
+        main{
+            margin-top: 50px;
+        }
+        section > h2{
+            font-size: 23px;
+        }
+        .p-sec{
+            font-size: 47px;
+        }
+        #lorem{
+            font-size: 12px
+        }
+    }
+
+    @media(max-width: 1040px){
+        img{
+            height: 340px;
+        }
+        section{
+            width: 50%;
+            margin: 0px;
+        }
+        img{
+            margin-top: 50px;
+        }
+        .p-sec{
+            font-size: 40px;
+            line-height: 2.5rem;
+        }
+        main{
+            height: 500px;
+            margin-top: 0px;
+            position: relative;
+        }
+        #lorem{
+            line-height: 1.5rem;
+            font-size: 14px;
+        }
+    }
+    @media(max-width: 850px){
+        li{
+            padding: 20px 10px;
+        }
+        section > h2{
+            font-size: 21px;
+        }
+        .p-sec{
+            font-size: 35px;
+        }
+        #lorem{
+            font-size: 12px
+        }
+    }
+
+    /* ---------------- MENU HAMBURGUER ----------------*/
+
+    @media(max-width: 780px){
+        main{
+            height: 800px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        button{
+            width: 25%;
+            padding: 20px;
+            position: relative;
+        }
+        
+        section{
+            width: 100vw;
+            text-align: center;
+            margin-top: 50px;
+            justify-content: center;
+        }
+        article > img{
+            height: 390px;
+        }
+        #box-btn{
+            width: 100%;
+            height: 30%;
+            align-items: center;
+            justify-content: center;
+        }
+
+    }
