@@ -9,6 +9,7 @@
 body{
     position: relative;
     height: 100vh;
+    overflow-x: hidden;
 }
 header{
     height: 100px;
@@ -17,6 +18,11 @@ header{
     background-color: white;
     color: black;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.236);
+}
+#titulo{
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
 }
 span{
     color: rgb(255, 166, 0);
@@ -88,7 +94,7 @@ main{
 p{
     font-size: 54px ;
 }
-#Lorem{
+#slogan{
     font-size: 15px;
     color: black;
     margin-left: 2px;
@@ -125,9 +131,7 @@ button{
         .p-sec{
             font-size: 47px;
         }
-        #lorem{
-            font-size: 12px
-        }
+       
     }
 
     @media(max-width: 1040px){
@@ -150,10 +154,7 @@ button{
             margin-top: 0px;
             position: relative;
         }
-        #lorem{
-            line-height: 1.5rem;
-            font-size: 14px;
-        }
+       
     }
     @media(max-width: 850px){
         li{
@@ -165,14 +166,29 @@ button{
         .p-sec{
             font-size: 35px;
         }
-        #lorem{
-            font-size: 12px
-        }
+       
     }
 
     /* ---------------- MENU HAMBURGUER ----------------*/
 
     @media(max-width: 780px){
+        .menu-hamburguer > div{
+            width: 32px;
+            height: 4px;
+            background: #ffa500;
+            margin: 8px;
+            margin-right: 15px;
+        }
+        #navigation{
+            display: flex;
+            align-items: center;
+        }
+        .menu-hamburguer{
+            cursor: pointer;
+        }
+        ul{
+            display: none;
+        }
         main{
             height: 800px;
             display: flex;
@@ -184,7 +200,6 @@ button{
             padding: 20px;
             position: relative;
         }
-        
         section{
             width: 100vw;
             text-align: center;
@@ -200,5 +215,43 @@ button{
             align-items: center;
             justify-content: center;
         }
-
+    }
+    @media(max-width: 570px){
+        button{
+            width: 35%;
+        }
+        article > img{
+            margin-top: 30px;
+        }
+    }
+    @media(max-width: 440px){
+        #titulo{
+            font-size: 1.7rem;
+            margin-right: 5px;
+        }
+        button{
+            width: 40%;
+        }
+        article > img{
+            height: 310px;
+            margin-bottom: 10px;
+            margin-top: 0px;
+        }
+        section{
+            margin-top: 30px;
+        }
+        #slogan{
+            width: 90%;
+            margin: 0px auto;
+            font-size: 12px;
+            line-height: 1.6rem;
+        }
+        br{
+            display: none;
+        }
+    }
+    @media(max-width: 400px){
+        button{
+            width: 50%;
+        }
     }
